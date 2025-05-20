@@ -1,87 +1,81 @@
-Construction Site Safety Detection
+# 🦺 Construction Site Safety Detection
 
-A real-time object detection system using YOLOv8 to identify construction site safety equipment (e.g., helmets, vests), achieving 90% accuracy. Built for robotic vision to enable automated safety monitoring in resource-constrained environments.
+A **real-time object detection system** built with **YOLOv8** to identify safety equipment (e.g., helmets, vests) on construction sites. Achieved **90% accuracy**, optimized for **low-latency robotic vision systems** operating in **resource-constrained environments**.
 
-Overview
+---
 
-This project leverages YOLOv8 and OpenCV to detect safety equipment in construction site images/videos, optimized for robotic integration. It achieves 90% accuracy and reduces inference time by 18% through fine-tuning and preprocessing, supporting autonomous safety inspections.
+## 🚀 Overview
 
-Features
+This project leverages **YOLOv8** and **OpenCV** to detect construction safety gear in images and video streams. It is designed for **autonomous safety inspection** in robotics.
 
+* **Accuracy:** 90%
+* **Inference Time Reduced:** 18% via fine-tuning and optimized preprocessing
 
+---
 
+## 🔧 Features
 
+* ✅ Real-time detection of helmets and vests using YOLOv8
+* ⚙️ Optimized for embedded and low-power robotic applications
+* 🤖 Scalable for integration with robotic platforms
+* 📊 Preprocessing and visualization using OpenCV and Matplotlib
 
-Real-time detection of safety equipment using YOLOv8.
+---
 
+## 🛠️ Technologies Used
 
+**Languages:** Python
+**Libraries:** YOLOv8 (Ultralytics), OpenCV, NumPy, Matplotlib
+**Tools:** Google Colab (T4 GPU), Jupyter Notebook, Git
 
-Optimized for low-latency performance in robotic applications.
+---
 
+## 📦 Installation
 
+1. **Clone the repository:**
 
-Scalable design for integration with robotic platforms.
-
-
-
-Data preprocessing and visualization with OpenCV and Matplotlib.
-
-Technologies
-
-
-
-
-
-Languages: Python
-
-
-
-Libraries: YOLOv8 (Ultralytics), OpenCV, NumPy, Matplotlib
-
-
-
-Tools: Google Colab (T4 GPU), Jupyter Notebook, Git
-
-Installation
-
-
-
-
-
-Clone the repository:
-
+```bash
 git clone https://github.com/Skkkiiidecee/ConstructionSiteSafetyDetection.git
+cd ConstructionSiteSafetyDetection
+```
 
+2. **Install dependencies:**
 
-
-Install dependencies:
-
+```bash
 pip install ultralytics opencv-python numpy matplotlib
+```
 
+3. **Add model weights:**
 
+Download the trained YOLOv8 model (`best.pt`) from \[Google Drive link or your specified path] and place it in the `/weights/` directory.
 
-Download the trained YOLOv8 model (best.pt) from [Google Drive link or specify path] and place it in /weights/.
+---
 
-Usage
-
-
-
-
+## ▶️ Usage
 
 Run the detection script:
 
+```bash
 python detect.py --weights weights/best.pt --source data/sample_video.mp4
+```
 
+* Outputs will be saved in the `/runs/detect/` folder
+* Use Matplotlib for custom visualization if needed
 
+---
 
-View results in the output folder or visualize with Matplotlib.
+## 📂 Dataset
 
-Dataset
+* **Source:** [Construction Site Safety Dataset (Roboflow/Kaggle)](https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow)
+* **Images:** 2605 (including helmets, vests, etc.)
+* You can customize for other datasets by updating `data.yaml`
 
-Trained on a construction site safety dataset (e.g., helmets, vests, 2605 images, as per Jupyter notebook progress bar). Update data.yaml for custom datasets.
-Dataset: https://www.kaggle.com/datasets/snehilsanyal/construction-site-safety-image-dataset-roboflow
+---
 
-About Me
+## 👩‍💻 About Me
 
-I’m a third-year B.Tech student passionate about AI, computer vision, and robotics. This self-learning project reflects my expertise in Python, YOLOv8, and OpenCV, with applications in robotic vision. Check out my other projects at GitHub or connect on LinkedIn.
+I’m a **third-year B.Tech CSE student** at **KIIT DU**, passionate about **AI, computer vision, and robotics**. This project reflects my hands-on learning in **YOLOv8, OpenCV**, and real-time vision for robotics.
+
+* 💻 [Check out my other projects](https://github.com/Skkkiiideeee)
+* 🔗 [Connect with me on LinkedIn](https://www.linkedin.com/in/sugyani-krishnadarsinee/)
 
