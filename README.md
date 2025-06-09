@@ -7,6 +7,7 @@ A **real-time object detection system** built with **YOLOv8** to identify safety
 ## 🚀 Overview
 
 This project leverages **YOLOv8** and **OpenCV** to detect construction safety gear in images and video streams. It is designed for **autonomous safety inspection** in robotics.
+Check the latest code on constructionsitesafetydetection version 3
 
 * **Accuracy:** 90%
 * **Inference Time Reduced:** 18% via fine-tuning and optimized preprocessing
